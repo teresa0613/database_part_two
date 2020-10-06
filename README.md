@@ -109,3 +109,23 @@ customer_id | first_name | last_name | amount | payment_date
 567 | Alfredo | Mcadams | 10.99 | 2007-03-23 04:47:09.996577
 .....
 (107 rows)
+
+4. Ecrivez une requête SQL qui affiche le chiffre d'affaire gagné par le video club depuis son ouverture.
+
+INPUT
+SELECT SUM (amount) AS total FROM payment;
+
+OUTPUT
+dvdrental=> SELECT SUM (amount) AS total FROM payment;
+total
+
+---
+
+61312.04
+(1 row)
+
+5. Ecrivez une requête SQL qui affiche le TOP 10 des clients qui ont fait le plus d'achat dans ce video club. Il faudra récupérer leur id, prénom, nom, email. Il vous faudra utiliser les requêtes auxiliaires avec WITH pour cette exercice.
+
+INPUT
+
+OUTPUT
